@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "5bfa4ae4-36a1-4927-b47a-9dc9558fc654",
+		"name": "Online Marketplace",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23354805"
+	},
+	"item": [
+		{
+			"name": "Seller Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Tagline\",\r\n    \"email\":\"info@taglineinfotech.com\",\r\n    \"password\":\"Tagline@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/backend/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Mayur\",\r\n    \"email\":\"mbhole1996@gmail.com\",\r\n    \"password\":\"Mayur@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/backend/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"boAt Stone 352\",\r\n    \"discription\":\"boAt Stone 352 Bluetooth Speaker with 10W RMS Stereo Sound, IPX7 Water Resistance, TWS Feature, Up to 12H Total Playtime, Multi-Compatibility Modes and Type-C Charging(Raging Black)\",\r\n    \"price\":\"1699\",\r\n    \"image_url\":\"https://m.media-amazon.com/images/I/61K8FS335JL._SX522_.jpg\",\r\n    \"seller_user\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/backend/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tracking\":1,\r\n    \"product_name\":1,\r\n    \"purches_price\":\"1690\",\r\n    \"seller_user\":1,\r\n    \"buyer_user\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/backend/purchase/"
+			},
+			"response": []
+		}
+	]
+}
